@@ -5,7 +5,7 @@
     currentScale: 1,
     layout: 'double',
     maxScale: 2,
-    audioSrc: "sound/page-flip.mp3",
+    audioSrc: "",
     init: function () {
 
         $(window).bind('keydown', function (e) {
@@ -244,8 +244,8 @@
         return $('#viewer .page').length;
     },
     startTurnSound: function () {
-        var audio = new Audio(PdfFlip.audioSrc);
-        audio.play();
+        // var audio = new Audio(PdfFlip.audioSrc);
+        // audio.play();
     },
 
     loadTurnJsPages: function (pages, magazine, isInit, defer, scale) {
